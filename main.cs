@@ -12,13 +12,12 @@ class Program
         var day = Console.ReadLine();
         int age;
         
-        Console.WriteLine("Determine whether a person gets a student discount to a museum");
+        Console.Write("Determine whether a person gets a student discount to a museum");
         Console.WriteLine("");
         Console.Write("Enter the day of the week : ");
         day = Console.ReadLine();
         Console.WriteLine("");
         Console.Write("Enter age : ");
-        Console.ReadLine();
         age = Convert.ToInt32(Console.ReadLine());
         if (( day == "Tuesday" || day == "Thursday" ) || (age > 12 && age < 21)) 
             Console.WriteLine("You're eligible for student pricing");
