@@ -20,12 +20,11 @@ class Program
         age = Convert.ToInt32(Console.ReadLine());
 
       
-        if (( day == "Tuesday" || day == "Thursday" ) || (age > 12 && age < 21)) {
+        if (( day == "Tuesday" || day == "Thursday" ) || (age > 12 && age < 21)) 
             Console.WriteLine("You're eligible for student pricing");
-        }
-         else {
+         else 
             Console.WriteLine("You must pay regular price");
-        } 
+         
         
         Console.WriteLine("\nDone.");
     }
