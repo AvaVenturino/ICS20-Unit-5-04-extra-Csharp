@@ -9,22 +9,21 @@ class Program
 {
     public static void Main(string[] args)
     {
-        var day = Console.ReadLine();
+        var days = Console.ReadLine();
         int age;
-        
-        Console.WriteLine("Determine whether a person gets a student discount to a museum");
-        Console.Write("Enter the day of the week : ");
-        day = Console.ReadLine();
+        //Input
+        Console.WriteLine("This program checks eligibility for student pricing.");
+        Console.WriteLine("");
+        Console.Write("Enter the day of the week: ");
+        days = Console.ReadLine();
         Console.WriteLine("");
         Console.Write("Enter age : ");
         age = Convert.ToInt32(Console.ReadLine());
-
-      
-        if (( day == "Tuesday" || day == "Thursday" ) || (age > 12 && age < 21)) 
+        //Process
+        if ((days == "Tuesday" || days == "Thursday") || (age > 12 && age < 21))
             Console.WriteLine("You're eligible for student pricing");
-         else 
+        else
             Console.WriteLine("You must pay regular price");
-         
         
         Console.WriteLine("\nDone.");
     }
