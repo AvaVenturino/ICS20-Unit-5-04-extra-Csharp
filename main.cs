@@ -18,6 +18,8 @@ class Program
         Console.WriteLine("");
         Console.Write("Enter age : ");
         age = Convert.ToInt32(Console.ReadLine());
+
+      
         if (( day == "Tuesday" || day == "Thursday" ) || (age > 12 && age < 21)) {
             Console.WriteLine("You're eligible for student pricing");
         }
