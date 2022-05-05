@@ -24,7 +24,6 @@ class Program
             Console.WriteLine("You're eligible for student pricing");
         else
             Console.WriteLine("You must pay regular price");
-        
         Console.WriteLine("\nDone.");
     }
 }
